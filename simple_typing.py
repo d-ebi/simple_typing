@@ -337,7 +337,7 @@ class SimpleTyping:
             pass
 
 def main():
-    targets = sys.argv[1] if len(sys.argv) > 1 else ['symbol']
+    targets = sys.argv[1].split(',') if len(sys.argv) > 1 else ['symbol']
     st = SimpleTyping(targets)
     st.display_target_key()
 
